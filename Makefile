@@ -17,7 +17,7 @@ RACE_FLAG := $(if $(filter riscv64,$(TEST_GOARCH)),,-race)
 all: test
 
 build:
-	go build -trimpath -ldflags "$(LDFLAGS)" -o $(BINARY) .
+	go build -trimpath -ldflags "$(LDFLAGS)" -o $(BINARY) ./cmd/onecli
 
 vet:
 	go vet ./...

@@ -30,7 +30,7 @@ type OS struct{}
 // NewOS returns a VFS backed by the operating system.
 func NewOS() VFS { return OS{} }
 
-func (OS) ReadFile(name string) ([]byte, error)     { return os.ReadFile(name) }
+func (OS) ReadFile(name string) ([]byte, error) { return os.ReadFile(name) }
 func (OS) WriteFile(name string, data []byte, perm fs.FileMode) error {
 	return os.WriteFile(name, data, perm)
 }
@@ -54,7 +54,7 @@ func (m Mem) resolve(name string) string {
 	return filepath.Join(m.Base, name)
 }
 
-func (m Mem) ReadFile(name string) ([]byte, error)     { return os.ReadFile(m.resolve(name)) }
+func (m Mem) ReadFile(name string) ([]byte, error) { return os.ReadFile(m.resolve(name)) }
 func (m Mem) WriteFile(name string, data []byte, perm fs.FileMode) error {
 	return os.WriteFile(m.resolve(name), data, perm)
 }

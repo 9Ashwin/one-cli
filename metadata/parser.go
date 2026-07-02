@@ -13,7 +13,7 @@ import (
 
 // Extension field names used by one-cli.
 const (
-	extShortcut    = "x-onecli-shortcut"
+	extShortcut   = "x-onecli-shortcut"
 	extIdentities = "x-onecli-identities"
 	extScopes     = "x-onecli-scopes"
 	extQuality    = "x-onecli-quality"

@@ -2,6 +2,7 @@ version: 2
 
 builds:
   - binary: onecli
+    main: ./cmd/onecli
     env:
       - CGO_ENABLED=0
     ldflags:

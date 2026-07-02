@@ -5,9 +5,9 @@
 //
 // Tiers:
 //
-//   1. Shortcuts:        <cli> <service> +<shortcut>
-//   2. Metadata-driven:  <cli> <service> <resource> <method>
-//   3. Generic call:     <cli> api <METHOD> <path>
+//  1. Shortcuts:        <cli> <service> +<shortcut>
+//  2. Metadata-driven:  <cli> <service> <resource> <method>
+//  3. Generic call:     <cli> api <METHOD> <path>
 //
 // The runtime wires metadata, auth, HTTP client, output formatting, and the
 // typed error envelope together.
