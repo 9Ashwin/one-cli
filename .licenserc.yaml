@@ -1,0 +1,13 @@
+header:
+  license:
+    content: |
+      Copyright (c) 2026 9Ashwin. SPDX-License-Identifier: MIT
+    copyright-year: "2026"
+
+  paths:
+    - '**/*.go'
+
+  paths-ignore:
+    - '**/testdata/**'
+
+  comment: on-failure

@@ -1,0 +1,8 @@
+title = "one-cli gitleaks config"
+
+[extend]
+useDefault = true
+
+# Add framework-specific secret patterns here as the project grows.
+# Example token placeholders in docs must use the *_EXAMPLE_TOKEN convention
+# (enforced by scripts/check-doc-tokens.sh) so they are not flagged here.
