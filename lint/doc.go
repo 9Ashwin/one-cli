@@ -1,9 +1,13 @@
 // Copyright (c) 2026 9Ashwin. SPDX-License-Identifier: MIT
 
-// Package lint hosts one-cli's custom golangci-lint analyzers.
+// Command lintcheck runs one-cli's source-level errs/ contract guards.
 //
-// It is an independent Go module (github.com/9Ashwin/one-cli/lint). The
-// errscontract analyzer (banning bare fmt.Errorf final wraps, undeclared
-// error subtypes, and legacy error helpers) is populated by Issue #11; this
-// placeholder keeps the module buildable in the meantime.
-package lint
+// It lives in its own Go module (github.com/9Ashwin/one-cli/lint) so its
+// build-time dependency on go/ast and related tooling does not leak into the
+// shipped onecli binary's module graph.
+//
+// The errscontract analyzer enforces the typed error contract defined in the
+// main module's errs/ package: every command boundary error must be a typed
+// errs.* error, every Subtype must be declared, and every typed error struct
+// must embed errs.Problem.
+package main
