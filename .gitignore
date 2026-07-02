@@ -1,0 +1,18 @@
+# Binaries
+/onecli
+/lark-cli
+*.exe
+
+# Build output
+/.tmp/
+/dist/
+
+# Go
+/vendor/
+
+# IDE
+/.idea/
+/.vscode/
+
+# OS
+.DS_Store
