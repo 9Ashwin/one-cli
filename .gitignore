@@ -16,3 +16,6 @@
 
 # OS
 .DS_Store
+
+# loop-it state
+.loop-state.json
